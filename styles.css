@@ -1,0 +1,113 @@
+html, body
+	{
+	background-color: #FFFBF1;
+	font-family: Calibri, Arial, sans-serif;
+	color: black;
+    font-size: 12px;
+	}
+	
+#header
+	{
+	/* 
+    width: unknown;
+    height: unknown;
+        to be changed according to img size, values here are just for demonstration
+    */
+    width:  702px;
+    height:  100px;
+    margin: 0 auto 0;
+	}
+#nav     
+    {
+    font-size: 16px;
+    text-align: center;
+    color: white;
+    height: 39px;
+    width:  702px; /* this is set according to the nav bar link boxes, find out a simpler way to auto create the right size boxes*/
+    margin: 0 auto 0;
+    }
+
+#navbar
+    {
+    position: absolute;
+    background-color: rgba(0,0,0,.6);
+    list-style-type:  none;
+    margin:  0;
+    padding: 0;
+    width: 702px;
+    height: 39px;
+    }
+
+#navbar li
+    {
+    display:  inline;
+    float: left;
+    }
+
+#navbar li a
+    {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    width: 97px;
+    padding: 10px;
+    }
+
+#navbar li a:hover
+    {
+    color: white;
+    background-color: #C64804;
+}
+
+#content
+    {
+    width: 702px;
+    margin: 0 auto 0;    
+}
+
+#upper-content
+    {
+    text-align: center;
+}
+
+h1
+    {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#lower-content
+    {
+    height: 220px;
+    text-align: center;
+}
+
+#left
+    {
+    width: 220px;
+    float: left;
+}
+
+#middle
+    {
+    display: inline-block;
+    width: 220px;
+    margin: auto;
+}
+
+#right
+    {
+    float: right;
+    width: 220px;
+}
+
+#photo-gallery
+    {
+    /*to be determined*/
+}
+
+#footer
+    {
+    width: 702px;
+}

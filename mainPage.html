@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+		<title>Home Page Demo</title>
+		<meta charset="utf-8">
+        <link rel="stylesheet" href="styles.css">
+        <script type="text/javascript" language="Javascript" 
+        src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js">
+        </script>
+<script>
+$(function(){    // this is the shorthand for document.ready
+  $(document).scroll(function(){    // this is the scroll event for the document
+
+    scrolltop = $(document).scrollTop(); // by this we get the value of the scrolltop ie how much scroll has been don by user
+    if(parseInt(scrolltop) >= 100)    // check if the scroll value is equal to the top of navigation
+      { 
+        $("#navbar").css({"position":"fixed","top":"0"});   // is yes then make the position fixed to top 0
+      }
+    else
+    {
+      $("#navbar").css({"position":"absolute","top":"100px"}); // if no then make the position to absolute and set it to 80
+    }
+  })
+
+});
+</script>
+</head>
+<!--divide this page into 5 boxes-->
+<body>
+	
+	<!--first box-->
+	<div id="header">
+		<div id="header-interior">
+		</div>
+		<div id="social-link">
+		</div>
+	</div>
+	
+	<!--second box-->
+	<div id="nav">
+            <ul id="navbar">    <!--changed to list form-->
+                <li><a href=".">Home</a></li>
+                <li><a href=".">About</a></li>
+                <li><a href=".">Stigma</a></li>
+                <li><a href=".">Tool Kit</a></li>
+                <li><a href=".">Pledge</a></li>
+                <li><a href=".">Resources</a></li>
+            </ul>
+	</div>
+	
+	<!--third box-->
+	<div id="content">
+		<div id="upper-content"> 
+			<h1>Home Headline<h1>
+			<p></p>
+		</div>
+		<div id="lower-content">
+			<div id="left">
+				<img src=" ">
+				<h3>title</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec urna. <a href="#what">Mauris tempor</a> euismod metus. Donec nisi nulla, interdum nec, fringilla nec, volutpat ut, eros. Aenean convallis arcu commodo leo. Aliquam libero. Donec ac elit. Morbi nec nibh. Nunc sed sapien eu nibh placerat semper. Proin feugiat lectus sed neque.</p>
+			</div>
+			<div id="middle">
+				<img src=" ">
+				<h3>title</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec urna. <a href="#what">Mauris tempor</a> euismod metus. Donec nisi nulla, interdum nec, fringilla nec, volutpat ut, eros. Aenean convallis arcu commodo leo. Aliquam libero. Donec ac elit. Morbi nec nibh. Nunc sed sapien eu nibh placerat semper. Proin feugiat lectus sed neque.</p>
+			</div>
+			<div id="right">
+				<img src=" ">
+				<h3>title</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec urna. <a href="#what">Mauris tempor</a> euismod metus. Donec nisi nulla, interdum nec, fringilla nec, volutpat ut, eros. Aenean convallis arcu commodo leo. Aliquam libero. Donec ac elit. Morbi nec nibh. Nunc sed sapien eu nibh placerat semper. Proin feugiat lectus sed neque.</p>
+			</div>
+		</div>
+	</div>
+	
+	<!--forth box-->
+	<div id="photo-gallery">
+	</div>
+	
+	<!--fifth box-->
+	<div id="footer">
+	</div>
+	
+</body>
+
+</html>
