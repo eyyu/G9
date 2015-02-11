@@ -17,6 +17,11 @@ html, body
     height:  100px;
     margin: 0 auto 0;
 	}
+#header-interior
+    {
+    margin: 0 auto 0;
+}
+
 #nav     
     {
     font-size: 16px;
