@@ -71,11 +71,13 @@ html, body
     width: 702px;
     margin: 0 auto 0;    
     padding: 10px;
+    background-color: white;
 }
 
 #upper-content
     {
     text-align: center;
+    background-color: white;
 }
 
 h1
@@ -94,16 +96,19 @@ h2{
     {
     height: 220px;
     text-align: center;
+    background-color: white;
 }
 
 .contentInterior{
-    padding:  10px;   
+    padding:  10px;
+    background-color: white;   
 }
 
 #left
     {
     width: 220px;
     float: left;
+    background-color: white;
 }
 
 #middle
@@ -111,12 +116,14 @@ h2{
     display: inline-block;
     width: 220px;
     margin: auto;
+    background-color: white;
 }
 
 #right
     {
     float: right;
     width: 220px;
+    background-color: white;
 }
 
 #photo-gallery
