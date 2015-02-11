@@ -4,6 +4,7 @@ html, body
 	font-family: Calibri, Arial, sans-serif;
 	color: black;
     font-size: initial;
+    margin:  0;
 	}
 	
 #header
@@ -64,6 +65,8 @@ html, body
     {
     color: white;
     background-color: #C64804;
+    height: 30px;
+    padding-top: 15px;
 }
 
 #navbar li a.resources{
@@ -71,18 +74,25 @@ html, body
     padding-top: 11px;
 }
 
+#navbar li a:hover.resources {
+    color: white;
+    background-color: #C64804;
+    height: 30px;
+    padding-top: 15px;
+}
+
 #content
     {
-    width: 702px;
+    width: 683px;
     margin: 0 auto 0;    
     padding: 10px;
-    background-color: white;
+
 }
 
 #upper-content
     {
     text-align: center;
-    background-color: white;
+
 }
 
 h1
@@ -101,7 +111,7 @@ h2{
     {
     height: 220px;
     text-align: center;
-    background-color: white;
+
 }
 
 .contentInterior{
