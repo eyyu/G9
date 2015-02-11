@@ -76,13 +76,13 @@ html, body
     width: 702px;
     margin: 0 auto 0;    
     padding: 10px;
-    background-color: white;
+
 }
 
 #upper-content
     {
     text-align: center;
-    background-color: white;
+
 }
 
 h1
@@ -101,7 +101,7 @@ h2{
     {
     height: 220px;
     text-align: center;
-    background-color: white;
+
 }
 
 .contentInterior{
