@@ -4,6 +4,8 @@ html, body
 	font-family: Calibri, Arial, sans-serif;
 	color: black;
     font-size: initial;
+    padding: 0;
+    margin: 0;
 	}
 	
 #header
@@ -97,6 +99,10 @@ h2{
     font-size: 16px;
     font-family: 'Copperplate Gothic', 'Copperplate Gothic Light', sans-serif;
 }
+p{
+font-family: Calibri, Arial, sans-serif;
+    
+}
 #lower-content
     {
     height: 220px;
@@ -106,14 +112,14 @@ h2{
 
 .contentInterior{
     padding:  10px;
-    background-color: white;   
+
 }
 
 #left
     {
     width: 220px;
     float: left;
-    background-color: white;
+
 }
 
 #middle
@@ -121,14 +127,14 @@ h2{
     display: inline-block;
     width: 220px;
     margin: auto;
-    background-color: white;
+
 }
 
 #right
     {
     float: right;
     width: 220px;
-    background-color: white;
+
 }
 
 #photo-gallery
@@ -140,3 +146,7 @@ h2{
     {
     width: 702px;
 }
+
+/**the following css is for login page */
+/**the following css is for about page */
+/**the following css is for login page */
