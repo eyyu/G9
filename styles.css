@@ -4,8 +4,12 @@ html, body
 	font-family: Calibri, Arial, sans-serif;
 	color: black;
     font-size: initial;
+<<<<<<< HEAD
     padding: 0;
     margin: 0;
+=======
+    margin:  0;
+>>>>>>> 8cb6ab6b6a1856c0f2b2d7c76e85fc1c6b3efa53
 	}
 	
 #header
@@ -66,6 +70,8 @@ html, body
     {
     color: white;
     background-color: #C64804;
+    height: 30px;
+    padding-top: 15px;
 }
 
 #navbar li a.resources{
@@ -73,9 +79,16 @@ html, body
     padding-top: 11px;
 }
 
+#navbar li a:hover.resources {
+    color: white;
+    background-color: #C64804;
+    height: 30px;
+    padding-top: 15px;
+}
+
 #content
     {
-    width: 702px;
+    width: 683px;
     margin: 0 auto 0;    
     padding: 10px;
 
