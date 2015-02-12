@@ -1,40 +1,36 @@
 html, body
 	{
-	background-color: #FFFBF1;
+	background-color: #FFD072;
 	font-family: Calibri, Arial, sans-serif;
 	color: black;
-    font-size: initial;
+    font-size: 15px;
     padding: 0;
     margin: 0;
 	}
 	
-#header
+#header /*contains header-interior and social links*/
 	{
-	/* 
-    width: unknown;
-    height: unknown;
-        to be changed according to img size, values here are just for demonstration
-    */
     width:  702px;
     height:  350px;
     margin: 0 auto 0;
 	}
-#header-interior
+
+#header-interior /*contains header img*/
     {
     margin: 0 auto 0;
 }
 
-#nav     
+#nav     /*div containing the ul*/
     {
     font-size: 16px;
     text-align: center;
     color: white;
     height: 39px;
-    width:  702px; /* this is set according to the nav bar link boxes, find out a simpler way to auto create the right size boxes*/
+    width:  702px; 
     margin: 0 auto 0;
     }
 
-#navbar
+#navbar /*the ul element*/
     {
     position: absolute;
     background-color: rgba(0,0,0,.6);
@@ -84,44 +80,44 @@ html, body
     padding-top: 15px;
 }
 
-#content
+#content /*overall body, contains upper-content and lower-content in index*/
     {
+    background-color: white;
+    overflow: hidden;
     width: 683px;
     margin: 0 auto 0;    
-    padding: 10px;
+    padding: 9px;
 }
 
-#upper-content
+#upper-content /*used in index in order to create the 3 divs side by side*/
     {
     text-align: center;
-
 }
 
 h1
     {
-    font-weight: normal;
-    font-size: 18px;
+    font-weight: bold;
+    font-size: 20px;
     font-family: 'Copperplate Gothic', 'Copperplate Gothic Light', sans-serif;
 }
 
 h2{
     font-weight:  normal;
+    font-size: 18px;
+    font-family: 'Copperplate Gothic', 'Copperplate Gothic Light', sans-serif;
+}
+
+h3
+    {
+    font-weight: normal;
     font-size: 16px;
     font-family: 'Copperplate Gothic', 'Copperplate Gothic Light', sans-serif;
 }
-p{
-font-family: Calibri, Arial, sans-serif;
-    
-}
-#lower-content
+
+#lower-content /*groups the left, middle, right divs together*/
     {
     height: 220px;
     text-align: center;
-
-}
-
-.contentInterior{
-    padding:  10px;
 
 }
 
@@ -152,12 +148,20 @@ font-family: Calibri, Arial, sans-serif;
     /*to be determined*/
 }
 
-#footer-content
+
+#footer
     {
-    width: 702px;
+    width: 701px;
     clear: both;
     margin:  0 auto 0;
-    
+    height: 150px;  /*can change accordingly*/
+    background-color: #C64804;
+}
+
+p
+    {
+    margin: 0; /*to avoid default margin creating unwanted spaces*/
+    padding: 10px 10px 20px;
 }
 
 /**the following css is for login page */
@@ -167,25 +171,76 @@ font-family: Calibri, Arial, sans-serif;
     float: left;
     width: 300px;
     margin: 0 10px 0;
-    padding-top: 60px;
+    padding-top: 100px;
+    height: 100%;
 }
 
 #sign-up
     {
     border-left: 1.5px #C64804 solid;
-    padding-left: 10px;
     float: right;
     width: 300px;
     margin:  0 10px 0;
     padding-left: 30px;
+    height: 100%;
 }
 
-.form-format
+
+.form-format /*overall form field styling*/
     {
+    border: 1px #DADADA dashed;
     background-color: #F7F7F7;
-    padding: 20px;
+    padding: 20px 50px;
     text-shadow: 1px 2px 2px #808080;
-    
 }
 
-/**the following css is for about page */
+.form-format input[type="text"], .form-format input[type="email"], .form-format input[type="password"] {
+    border: 1px dotted #DADADA;
+    color: #5E5E5E;
+    height: 30px;
+    margin-bottom: 16px;
+    margin-right: 6px;
+    margin-top: 2px;
+    outline: 0 none;
+    padding: 3px 3px 3px 5px;
+    width: 90%;
+    font-size: 14px;
+    line-height:15px;
+    box-shadow: inset 0px 1px 4px #ECECEC;
+    -moz-box-shadow: inset 0px 1px 4px #ECECEC;
+    -webkit-box-shadow: inset 0px 1px 4px #ECECEC;
+}    
+.button {
+    background: #E27575;
+    border: none;
+    padding: 10px 65px;
+    color: #FFF;
+    box-shadow: 1px 1px 5px #B6B6B6;
+    border-radius: 3px;
+    text-shadow: 1px 1px 1px #9E3F3F;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.button:hover {
+    background: #CF7A7A;
+}
+
+/**the following css is for toolkit page */
+
+#text-content {
+    text-align: left;
+}
+
+#pdf-content {
+    /*to be determined*/
+}
+
+/*the following css is for resources page*/
+/*to be determined with real link content, possibly simplifying classes*/
+
+/*the following css is for pledge page*/
+
+#pledge {
+    text-align: center;
+}
