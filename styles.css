@@ -60,25 +60,27 @@ html, body
     display: block;
     width: 97px;
     padding: 10px;
+    text-shadow: 2px 2px 2px black;
     }
 
 #navbar li a:hover
     {
     color: white;
     background-color: #C64804;
-    height: 30px;
+    height: 25px;
     padding-top: 15px;
 }
 
 #navbar li a.resources{
     font-size: 15px;
     padding-top: 11px;
+    text-shadow: 2px 2px 2px black;
 }
 
 #navbar li a:hover.resources {
     color: white;
     background-color: #C64804;
-    height: 30px;
+    height: 25px;
     padding-top: 15px;
 }
 
@@ -87,7 +89,6 @@ html, body
     width: 683px;
     margin: 0 auto 0;    
     padding: 10px;
-
 }
 
 #upper-content
@@ -151,11 +152,40 @@ font-family: Calibri, Arial, sans-serif;
     /*to be determined*/
 }
 
-#footer
+#footer-content
     {
     width: 702px;
+    clear: both;
+    margin:  0 auto 0;
+    
 }
 
 /**the following css is for login page */
+
+#sign-in
+    {
+    float: left;
+    width: 300px;
+    margin: 0 10px 0;
+    padding-top: 60px;
+}
+
+#sign-up
+    {
+    border-left: 1.5px #C64804 solid;
+    padding-left: 10px;
+    float: right;
+    width: 300px;
+    margin:  0 10px 0;
+    padding-left: 30px;
+}
+
+.form-format
+    {
+    background-color: #F7F7F7;
+    padding: 20px;
+    text-shadow: 1px 2px 2px #808080;
+    
+}
+
 /**the following css is for about page */
-/**the following css is for login page */
