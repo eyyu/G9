@@ -126,7 +126,7 @@ font-family: Calibri, Arial, sans-serif;
 
 #left
     {
-    width: 220px;
+    width: 200px;
     float: left;
 
 }
@@ -134,7 +134,7 @@ font-family: Calibri, Arial, sans-serif;
 #middle
     {
     display: inline-block;
-    width: 220px;
+    width: 200px;
     margin: auto;
 
 }
@@ -142,7 +142,7 @@ font-family: Calibri, Arial, sans-serif;
 #right
     {
     float: right;
-    width: 220px;
+    width: 200px;
 
 }
 
