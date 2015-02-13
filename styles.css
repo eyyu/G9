@@ -109,6 +109,7 @@ h2{
 
 h3
     {
+    color: #21786C;
     font-weight: bold;
     font-size: 16px;
     font-family: Century Gothic, sans-serif;
@@ -287,10 +288,51 @@ p
 }
 
 /*the following css is for resources page*/
+a.resourceLinks{
+    color: #21786C;
+    font-weight: bold;  
+}
 /*to be determined with real link content, possibly simplifying classes*/
 
 /*the following css is for pledge page*/
 
 #pledge {
     text-align: center;
+}
+
+/*the following css is for stigma page*/
+td {
+    width: 33%;
+    padding: 5px 5px;
+    text-align: start;
+    vertical-align: top;
+}
+
+.myth {
+    font-weight: bold;
+}
+
+.fact {
+    color: #C64804;
+    font-weight: bold;
+}
+
+.dfn {
+    font-style: italic;
+    font-fmaily: ;
+}
+
+.dfntitle {
+    color: #C64804;
+    font-weight: bold;
+    font-family: ‘Courier New’, Courier, monospace;   
+}
+
+dd {
+    padding: 0 10px 10px;
+}
+
+.mental-health {
+    float: right;
+        clear: both;
 }
