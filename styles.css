@@ -155,11 +155,11 @@ h3
     width: 701px;
     clear: both;
     margin:  0 auto 0;
-    height: 200px;  /*can change accordingly*/
+    height: 250px;  /*can change accordingly*/
     background-color: #C64804;
 }
 
-.site-link a {
+a:link {
     text-decoration: none;
     color: #FFFFFF;
 }
