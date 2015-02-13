@@ -109,6 +109,7 @@ h2{
 
 h3
     {
+    color: #21786C;
     font-weight: bold;
     font-size: 16px;
     font-family: Century Gothic, sans-serif;
@@ -237,6 +238,10 @@ p
 }
 
 /*the following css is for resources page*/
+a.resourceLinks{
+    color: #21786C;
+    font-weight: bold;  
+}
 /*to be determined with real link content, possibly simplifying classes*/
 
 /*the following css is for pledge page*/
