@@ -160,7 +160,7 @@ h3
     background-color: #C64804;
 }
 
-a:link {
+a.sitemap{
     text-decoration: none;
     color: #FFFFFF;
 }
