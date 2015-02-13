@@ -13,13 +13,13 @@ $(function(){    // this is the shorthand for document.ready
   $(document).scroll(function(){    // this is the scroll event for the document
 
     scrolltop = $(document).scrollTop(); // by this we get the value of the scrolltop ie how much scroll has been don by user
-    if(parseInt(scrolltop) >= 100)    // check if the scroll value is equal to the top of navigation
+    if(parseInt(scrolltop) >= 350)    // check if the scroll value is equal to the top of navigation
       { 
         $("#navbar").css({"position":"fixed","top":"0"});   // is yes then make the position fixed to top 0
       }
     else
     {
-      $("#navbar").css({"position":"absolute","top":"100px"}); // if no then make the position to absolute and set it to 80
+      $("#navbar").css({"position":"absolute","top":"350px"}); // if no then make the position to absolute and set it to 80
     }
   })
 
@@ -32,7 +32,10 @@ $(function(){    // this is the shorthand for document.ready
 	<!--first box-->
 	<div id="header">
 		<div id="header-interior">
-            <img src="images/hi5header.jpg" width="702" height=350" alt="HeaderPhoto>
+            <img src="images/hi5header.jpg" width="702" height=350" alt="HeaderPhoto" usemap="#signin">
+               <map name="signin">
+                   <area shape="rect" coords="550,8,689,40" href="login.html" alt="login">
+               </map>
 		</div>
 		<div id="social-link">
 		</div>
@@ -54,9 +57,8 @@ $(function(){    // this is the shorthand for document.ready
 	<div id="content">
 		<h1>Pledge<h1>
 		<img src="images/hifivecrew.jpg">
-		<h2>Hi F.I.V.E. movement to eliminate stigma<h2>
-		<p></p>
-		<ol type="hyphen">
+		<h2>Hi F.I.V.E. movement to eliminate stigma</h2>
+		<p><ol type="hyphen">
 			<li>I am committed to embracing and respecting those experiencing mental health distress and mental illness.</li>
 			<li>I am committed to standing up (and speaking up) when disrespect is shown against those experiencing mental health 
                 distress and mental illness.</li>
@@ -69,11 +71,15 @@ $(function(){    // this is the shorthand for document.ready
             <li>I am committed welcoming friendships and/or relationships with those experiencing mental health distress and mental illness.</li>
             <li>I am committed to not treating people who experience mental health distress and mental illness as if all they are is their diagnosis.</li>
 		</ol>
-		<form action=" ">
-			<input type="submit" value="TAKE THE PLEDGE!">
-		</form>
-	</div>
-    <p>pledges taken: 	<script type="text/javascript" src="http://counter6.statcounterfree.com/private/counter.js?c=279dd751d5a2caf80af2297026de520d"></script></p>
+        </p>
+  	<div id="pledge">
+    <form action=" ">
+		<input type="submit" class="button" value="TAKE THE PLEDGE!">
+	</form>
+    <p>Pledges Taken: <script type="text/javascript" src="http://counter6.statcounterfree.com/private/counter.js?c=279dd751d5a2caf80af2297026de520d"></script></p>
+    </div>
+    </div>
+
     <!--create a js popup to prompt email?-->
 	<!--forth box-->
 	<div id="footer">
