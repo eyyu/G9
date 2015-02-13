@@ -151,11 +151,61 @@ h3
 
 #footer
     {
+    position: relative;
     width: 701px;
     clear: both;
     margin:  0 auto 0;
-    height: 150px;  /*can change accordingly*/
+    height: 200px;  /*can change accordingly*/
     background-color: #C64804;
+}
+
+.site-link a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+ul {
+    list-style-type: none;
+    color: white;
+    font-family: Calibri;
+}
+
+h4 {
+    color: #FFD072;
+}
+
+.site-map {
+    position: absolute;
+    top: 0;
+    padding-left: 30px;
+    width: 150px;
+    height: 170px;
+}
+
+
+.connect {
+    position: absolute;
+    margin-left: 190px;
+    width: 150px;
+    height: 170px;
+}
+
+.contact {
+    position: absolute;
+    margin-left: 350px;
+    width: 150px;
+    height: 170px;
+}
+
+
+.terms {
+    position: absolute;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    margin-left: 550px;
+    width: 150px;
+    height: 40px;
+    text-align: right;
 }
 
 p
