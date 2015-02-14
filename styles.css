@@ -54,7 +54,7 @@ html, body
     text-decoration: none;
     font-weight: 500;
     display: block;
-    width: 97px;
+    width: 100px;
     padding: 8px;
     text-shadow: 2px 2px 2px black;
     }
@@ -70,6 +70,7 @@ html, body
 #navbar li a.resources{
     font-size: 17px;
     padding-top: 8px;
+    width: 106px;
     text-shadow: 2px 2px 2px black;
 }
 
@@ -304,6 +305,12 @@ p
 a.resourceLinks{
     color: #21786C;
     font-weight: bold;  
+}
+
+td.resourceLinks {
+    width: 20%;
+    border: 1px dotted #C64804;
+    padding-bottom: 30px;
 }
 /*to be determined with real link content, possibly simplifying classes*/
 
