@@ -309,8 +309,8 @@ a.resourceLinks{
 
 td.resourceLinks {
     width: 20%;
-    border: 1px dotted #C64804;
-    padding-bottom: 30px;
+    border: 1px dotted #C64804; /*to style the border? style is up for debate!*/
+    padding-bottom: 30px; /*placed here to give some spaces between links, especially the description side*/
 }
 /*to be determined with real link content, possibly simplifying classes*/
 
