@@ -160,18 +160,21 @@ h3
     background-color: #C64804;
 }
 
+li.sitemap {
+    color: white;
+}
+
 a.sitemap{
     text-decoration: none;
     color: #FFFFFF;
 }
 
-a:hover {
+a:hover.sitemap {
     color: #DADADA;
 }
 
 ul {
     list-style-type: none;
-    color: white;
     font-family: Calibri;
     font-size: medium;
 }
