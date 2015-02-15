@@ -28,6 +28,7 @@ html, body
     height: 39px;
     width:  702px; 
     margin: 0 auto 0;
+
     }
 
 #navbar /*the ul element*/
@@ -160,7 +161,7 @@ h4 {
     width: 701px;
     clear: both;
     margin:  0 auto 0;
-    height: 250px;  /*can change accordingly*/
+    height: 290px;  /*can change accordingly*/
     background-color: #C64804;
 }
 
@@ -182,10 +183,10 @@ a.sitemap:visited{
 
 div#footer div ul 
  {
-   color: #DADADA;
-   font-size: medium;
-   text-decoration: none;
-	list-style-type: none;
+    color: #DADADA;
+    font-size: medium;
+    text-decoration: none;  
+    list-style-type: none;
 }
 
 
@@ -215,23 +216,19 @@ div#footer div ul
     height: 170px;
 }
 
-.terms {
+.terms p{
     position: absolute;
-    right: 0;
+    left: 30%;
     bottom: 0;
     font-size: small;
     color: #DADADA;
-}
-
-#footer p { 
-    margin-right: auto;
-    margin-left:  auto;     
 }
 
 p
     {
     margin: 0; /*to avoid default margin creating unwanted spaces*/
     padding: 10px 10px 20px;
+    
 }
 
 /**the following css is for login page */
@@ -321,33 +318,31 @@ padding-bottom: 30px; /*placed here to give some spaces between links, especiall
 tr:nth-child(odd){
 background-color:#FEE2D3; }
 
-td:nth-child(even){
+table.resourceLink tr td:nth-child(even){
     width:70%;
 }
 
-td:first-child{
+table.resourceLink tr td:first-child{
     width: 30%;
-    border: 1px dotted #C64804; /*to style the border? style is up for debate!*/
 }
 
-a.resourceLinks:link{
+a, a.resourceLinks:link{
 text-decoration: none;
 color: #21786C;
 font-weight: bold;
 }
 
-a.resourceLinks:hover{
+a, a.resourceLinks:hover{
 text-decoration: none;
 color: #34BCA8;
 font-weight: bold;
 }
 
-a.resourceLinks:visited {
+a, a.resourceLinks:visited {
     text-decoration: none;
-    color: purple;
+    color: #000080;
     font-weight: bold;
 }
-
 
 /*to be determined with real link content, possibly simplifying classes*/
 
@@ -376,7 +371,8 @@ td {
 
 .dfn {
     font-style: italic;
-    font-fmaily: ;
+    font-size: medium;
+    padding-left: 3px;
 }
 
 .dfntitle {
@@ -392,4 +388,45 @@ dd {
 .mental-health {
     float: right;
         clear: both;
+}
+
+/*the following css is for toolkit page*/
+
+ul.tool-kit-list{
+    margin-left: 60px;
+    margin-top: 0;
+
+}
+img.tool-kit-pdf{
+float:right;
+padding-right: 100px;
+}
+
+.pdf-content{
+    clear: both;
+    position:  relative;
+    width:702px;
+    height:350px;
+
+}
+.pdf-content-inner1{
+    position: absolute;
+    left: 70px;
+
+}
+
+.pdf-content-inner2{
+    position: absolute;
+    right: 70px;  
+
+}
+
+a img:hover {
+    opacity: 0.7;
+}
+
+/*about page, logo contest CSS*/
+img.logo-contest {
+    float: right;
+    margin: 50px 10px;
 }
