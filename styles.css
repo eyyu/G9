@@ -165,7 +165,7 @@ a.sitemap{
     color: #FFFFFF;
 }
 
-ul {
+div#footer div ul {
     list-style-type: none;
     color: white;
     font-family: Calibri;
@@ -288,10 +288,41 @@ p
 }
 
 /*the following css is for resources page*/
-a.resourceLinks{
-    color: #21786C;
-    font-weight: bold;  
+
+table.resourceLink{
+    border-collapse: collapse;
 }
+
+table.resourceLink tr td{
+border: 1px solid #66532E;
+}
+
+td.linkSide{
+width:60px;
+}
+a.resourceLinks:link{
+text-decoration: none;
+color: #21786C;
+font-weight: bold;
+}
+
+a.resourceLinks:hover{
+text-decoration: none;
+color: #34BCA8;
+font-weight: bold;
+}
+
+a.resourceLinks:visited {
+    text-decoration: none;
+    color: purple;
+    font-weight: bold;
+}
+
+
+
+tr:nth-child(odd){
+background-color:#FEE2D3; }
+
 /*to be determined with real link content, possibly simplifying classes*/
 
 /*the following css is for pledge page*/
