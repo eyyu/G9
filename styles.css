@@ -105,23 +105,24 @@ h1
 }
 
 h2{
+    color: #C64804;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 24px;
     font-family: Century Gothic, sans-serif;
 }
 
 h3
     {
-    color: #21786C;
+    color: #C64804;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 20px;
     font-family: Century Gothic, sans-serif;
 }
 
 h4 {
     color: #FFD072;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 16px;
     font-family: Century Gothic, sans-serif;
 }
 
@@ -306,41 +307,46 @@ p
 /*the following css is for resources page*/
 
 table.resourceLink{
-border-collapse: collapse;
-width: 100%;
+    border-collapse: collapse;
+    width: 100%;
 }
 
-table.resourceLink tr td{
-border: 1px solid white;
-padding-bottom: 30px; /*placed here to give some spaces between links, especially the description side*/
+table.resourceLink tr:nth-child(odd){
+    background-color:#FEE2D3;
+    padding-top: 15px;
+    padding-bottom: 15px; 
+    border-bottom: dotted 1px #C64804;
+    border-top: dotted 1px #C64804;
 }
-
-tr:nth-child(odd){
-background-color:#FEE2D3; }
 
 table.resourceLink tr td:nth-child(even){
     width:70%;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 table.resourceLink tr td:first-child{
     width: 30%;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
-a, a.resourceLinks:link{
+a:link{
 text-decoration: none;
 color: #21786C;
 font-weight: bold;
 }
 
-a, a.resourceLinks:hover{
+a:hover{
 text-decoration: none;
 color: #34BCA8;
+text-decoration: underline;
 font-weight: bold;
 }
 
-a, a.resourceLinks:visited {
+a:visited {
     text-decoration: none;
-    color: #000080;
+    color: #1B4F45;
     font-weight: bold;
 }
 
@@ -355,7 +361,7 @@ a, a.resourceLinks:visited {
 /*the following css is for stigma page*/
 td {
     width: 33%;
-    padding: 5px 5px;
+    padding: 5px 8px;
     text-align: start;
     vertical-align: top;
 }
