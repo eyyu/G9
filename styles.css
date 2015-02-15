@@ -3,7 +3,7 @@ html, body
 	background-color: #FFD072;
 	font-family: Calibri, Arial, sans-serif;
 	color: black;
-    font-size: 18px;
+    font-size: 20px;
     padding: 0;
     margin: 0;
 	}
@@ -54,7 +54,7 @@ html, body
     text-decoration: none;
     font-weight: 500;
     display: block;
-    width: 97px;
+    width: 100px;
     padding: 8px;
     text-shadow: 2px 2px 2px black;
     }
@@ -70,6 +70,7 @@ html, body
 #navbar li a.resources{
     font-size: 17px;
     padding-top: 8px;
+    width: 106px;
     text-shadow: 2px 2px 2px black;
 }
 
@@ -94,6 +95,7 @@ html, body
     text-align: center;
 }
 
+/*Styling all the headings of the pages*/
 h1
     {
     font-weight: bold;
@@ -102,7 +104,7 @@ h1
 }
 
 h2{
-    font-weight:  bold;
+    font-weight: bold;
     font-size: 18px;
     font-family: Century Gothic, sans-serif;
 }
@@ -112,6 +114,13 @@ h3
     color: #21786C;
     font-weight: bold;
     font-size: 16px;
+    font-family: Century Gothic, sans-serif;
+}
+
+h4 {
+    color: #FFD072;
+    font-weight: bold;
+    font-size: 14px;
     font-family: Century Gothic, sans-serif;
 }
 
@@ -144,12 +153,7 @@ h3
 
 }
 
-#photo-gallery
-    {
-    /*to be determined*/
-}
-
-
+/*footer inform*/
 #footer
     {
     position: relative;
@@ -160,24 +164,35 @@ h3
     background-color: #C64804;
 }
 
-a.sitemap{
+
+a.sitemap:link{
     text-decoration: none;
     color: #FFFFFF;
 }
-
-div#footer div ul {
-    list-style-type: none;
-    color: white;
-    font-family: Calibri;
+ 
+a.sitemap:hover{
+    text-decoration: underline;
+    color: #FFFFFF;
 }
 
-h4 {
-    color: #FFD072;
+a.sitemap:visited{
+    text-decoration: none;
+    color: #FFFFFF;
+ }
+
+div#footer div ul 
+ {
+   color: #DADADA;
+   font-size: medium;
+   text-decoration: none;
+	list-style-type: none;
 }
+
+
 
 .site-map {
     position: absolute;
-    top: 0;
+    top: 20px;
     padding-left: 30px;
     width: 150px;
     height: 170px;
@@ -186,27 +201,31 @@ h4 {
 
 .connect {
     position: absolute;
-    margin-left: 190px;
-    width: 150px;
+    top: 20px;
+    margin-left: 220px;
+    width: 170px;
     height: 170px;
 }
 
 .contact {
     position: absolute;
-    margin-left: 350px;
-    width: 150px;
+    top: 20px;
+    margin-left: 420px;
+    width: 190px;
     height: 170px;
 }
 
-
 .terms {
     position: absolute;
-    margin-bottom: 0px;
-    margin-right: 0px;
-    margin-left: 550px;
-    width: 150px;
-    height: 40px;
-    text-align: right;
+    right: 0;
+    bottom: 0;
+    font-size: small;
+    color: #DADADA;
+}
+
+#footer p { 
+    margin-right: auto;
+    margin-left:  auto;     
 }
 
 p
@@ -290,16 +309,27 @@ p
 /*the following css is for resources page*/
 
 table.resourceLink{
-    border-collapse: collapse;
+border-collapse: collapse;
+width: 100%;
 }
 
 table.resourceLink tr td{
-border: 1px solid #66532E;
+border: 1px solid white;
+padding-bottom: 30px; /*placed here to give some spaces between links, especially the description side*/
 }
 
-td.linkSide{
-width:60px;
+tr:nth-child(odd){
+background-color:#FEE2D3; }
+
+td:nth-child(even){
+    width:70%;
 }
+
+td:first-child{
+    width: 30%;
+    border: 1px dotted #C64804; /*to style the border? style is up for debate!*/
+}
+
 a.resourceLinks:link{
 text-decoration: none;
 color: #21786C;
@@ -318,10 +348,6 @@ a.resourceLinks:visited {
     font-weight: bold;
 }
 
-
-
-tr:nth-child(odd){
-background-color:#FEE2D3; }
 
 /*to be determined with real link content, possibly simplifying classes*/
 
