@@ -54,7 +54,7 @@ html, body
     text-decoration: none;
     font-weight: 500;
     display: block;
-    width: 97px;
+    width: 100px;
     padding: 8px;
     text-shadow: 2px 2px 2px black;
     }
@@ -70,6 +70,7 @@ html, body
 #navbar li a.resources{
     font-size: 17px;
     padding-top: 8px;
+    width: 106px;
     text-shadow: 2px 2px 2px black;
 }
 
@@ -160,15 +161,23 @@ h3
     background-color: #C64804;
 }
 
-a:link {
+li.sitemap {
+    color: white;
+}
+
+a.sitemap{
     text-decoration: none;
     color: #FFFFFF;
 }
 
+a:hover.sitemap {
+    color: #DADADA;
+}
+
 ul {
     list-style-type: none;
-    color: white;
     font-family: Calibri;
+    font-size: medium;
 }
 
 h4 {
@@ -177,7 +186,7 @@ h4 {
 
 .site-map {
     position: absolute;
-    top: 0;
+    top: 20px;
     padding-left: 30px;
     width: 150px;
     height: 170px;
@@ -186,27 +195,32 @@ h4 {
 
 .connect {
     position: absolute;
-    margin-left: 190px;
-    width: 150px;
+    top: 20px;
+    margin-left: 220px;
+    width: 170px;
     height: 170px;
 }
 
 .contact {
     position: absolute;
-    margin-left: 350px;
-    width: 150px;
+    top: 20px;
+    margin-left: 420px;
+    width: 190px;
     height: 170px;
 }
 
-
 .terms {
     position: absolute;
-    margin-bottom: 0px;
-    margin-right: 0px;
-    margin-left: 550px;
-    width: 150px;
-    height: 40px;
+    right: 0;
+    bottom: 0;
+    font-size: small;
+    color: #DADADA;
+}
+
+#footer p {
+    
     text-align: right;
+    
 }
 
 p
@@ -291,6 +305,12 @@ p
 a.resourceLinks{
     color: #21786C;
     font-weight: bold;  
+}
+
+td.resourceLinks {
+    width: 20%;
+    border: 1px dotted #C64804; /*to style the border? style is up for debate!*/
+    padding-bottom: 30px; /*placed here to give some spaces between links, especially the description side*/
 }
 /*to be determined with real link content, possibly simplifying classes*/
 
