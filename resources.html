@@ -8,23 +8,7 @@
         <script type="text/javascript" 
         src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js">
         </script>
-<script>
-$(function(){    // this is the shorthand for document.ready
-  $(document).scroll(function(){    // this is the scroll event for the document
-
-    scrolltop = $(document).scrollTop(); // by this we get the value of the scrolltop ie how much scroll has been don by user
-    if(parseInt(scrolltop) >= 350)    // check if the scroll value is equal to the top of navigation
-      { 
-        $("#navbar").css({"position":"fixed","top":"0"});   // is yes then make the position fixed to top 0
-      }
-    else
-    {
-      $("#navbar").css({"position":"absolute","top":"350px"}); // if no then make the position to absolute and set it to 80
-    }
-  })
-
-});
-</script>
+        <script type="text/javascript" src="externalScript.js"></script>
 </head>
 <!--divide this page into 5 boxes-->
 <body>
@@ -164,8 +148,8 @@ $(function(){    // this is the shorthand for document.ready
         <div class="contact">
             <ul>
                 <li><h4>CONTACT US</h4></li>
-                <li class="sitemap">Email:hcs_feedback@sfu.ca</li>
-                <li class="sitemap">Phone:778-782-4615</li>
+                <li class="sitemap"><a class="sitemap" href="mailto:hcs_feedback@sfu.ca">Email:hcs_feedback@sfu.ca</a></li>
+                <li class="sitemap"><a class="sitemap" href="tel:778-829-8206">Phone:778-782-4615</a></li>
                 <li><a class="sitemap" href="http://www.sfu.ca/">SFU</a></li>
                 <li><a class="sitemap" href="http://www.bcit.ca/">BCIT</a></li>
             </ul>

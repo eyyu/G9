@@ -57,7 +57,7 @@ html, body
     display: block;
     width: 100px;
     padding: 8px;
-    text-shadow: 2px 2px 2px black;
+    text-shadow: 3px 3px 2px black;
     }
 
 #navbar li a:hover
@@ -69,10 +69,11 @@ html, body
 }
 
 #navbar li a.resources{
+    font-weight: 500;
     font-size: 17px;
     padding-top: 8px;
     width: 106px;
-    text-shadow: 2px 2px 2px black;
+    text-shadow: 3px 3px 2px black;
 }
 
 #navbar li a:hover.resources {
@@ -233,6 +234,12 @@ p
 }
 
 /**the following css is for login page */
+.login
+{
+    text-shadow: 2px 2px 2px #808080;
+    color:  black;
+}
+
 
 #sign-in
     {
