@@ -260,6 +260,54 @@ p
     height: 100%;
 }
 
+#signinform_email_errorloc
+{
+    color: #E27575;
+    text-shadow: none;
+    font-size: 16px;
+}
+
+#signinform_password_errorloc
+{
+    color: #E27575;
+    text-shadow: none;
+    font-size: 16px;
+}
+
+#signupform_firstname_errorloc
+{
+    color: #E27575;
+    text-shadow: none;
+    font-size: 16px;
+}
+
+#signupform_lastname_errorloc
+{
+    color: #E27575;
+    text-shadow: none;
+    font-size: 16px;
+}
+
+#signupform_email_errorloc
+{
+    color: #E27575;
+    text-shadow: none;
+    font-size: 16px;
+}
+
+#signupform_pass_errorloc
+{
+    color: #E27575;
+    text-shadow: none;
+    font-size: 16px;
+}
+
+#signupform_confirmpass_errorloc
+{
+    color: #E27575;
+    text-shadow: none;
+    font-size: 16px;
+}
 
 .form-format /*overall form field styling*/
     {
@@ -336,6 +384,10 @@ table.resourceLink tr td:first-child{
     width: 30%;
     padding-top: 15px;
     padding-bottom: 15px;
+}
+
+img {
+    border: 0;
 }
 
 a:link{
