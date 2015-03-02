@@ -4,27 +4,11 @@
 <head>
 		<title>Hi F.I.V.E About</title>
 		<meta charset="utf-8">
-        <link rel="stylesheet" href="styles.css">
-        <script type="text/javascript" language="Javascript" 
+        <link rel="stylesheet" href="base.css">
+        <script type="text/javascript"  
         src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js">
         </script>
-<script>
-$(function(){    // this is the shorthand for document.ready
-  $(document).scroll(function(){    // this is the scroll event for the document
-
-    scrolltop = $(document).scrollTop(); // by this we get the value of the scrolltop ie how much scroll has been don by user
-    if(parseInt(scrolltop) >= 350)    // check if the scroll value is equal to the top of navigation
-      { 
-        $("#navbar").css({"position":"fixed","top":"0"});   // is yes then make the position fixed to top 0
-      }
-    else
-    {
-      $("#navbar").css({"position":"absolute","top":"350px"}); // if no then make the position to absolute and set it to 80
-    }
-  })
-
-});
-</script>
+        <script type="text/javascript" src="externalScript.js"></script>
 </head>
 <!--divide the body into 4 boxes-->
 <body>
@@ -32,7 +16,7 @@ $(function(){    // this is the shorthand for document.ready
 	<!--first box-->
 	<div id="header">
 		<div id="header-interior">
-            <img src="images/hi5header.jpg" width="702" height=350" alt="HeaderPhoto" usemap="#signin">
+            <img src="images/hi5header.jpg" width="702" height="350" alt="HeaderPhoto" usemap="#signin">
                <map name="signin">
                    <area shape="rect" coords="550,8,689,40" href="login.html" alt="login">
                </map>
@@ -60,23 +44,29 @@ $(function(){    // this is the shorthand for document.ready
                 Technology separates us from having face to face conversations, and this means much of our daily interactions are limited.  
                 We end up missing out on the many opportunities to share our stories, feelings, and thoughts with our peers.
                 </p>
-            
+            <iframe width="682" height="400" src="https://www.youtube.com/embed/lTZfLB9xScs" allowfullscreen></iframe>   
             <p>
                 As students, our mental health can be affected by stress, emotional pain, and common struggles like depression, anxiety
                 and grief. But we don't have to go through it alone. A diary is typically known to be an outlet for our most personal stories. 
                 Use the diaries we are providing to share yours.  Tell us how you feel or how you have been impacted by issues of mental health
-                or illness.   Let's open up and eliminate stigma against mental illness.  If you see a diary at any of our campuses - 
+                or illness.</p>  
+            <p> Let's open up and eliminate stigma against mental illness.  If you see a diary at any of our campuses - 
                 Burnaby, Vancouver, or Surrey - share your story, pass on the diary, and keep it safe.  
                 This is our book to remind all of us that we are not as alone as we may think. 
 				</p>
-                <iframe width="682" height="400" src="https://www.youtube.com/embed/lTZfLB9xScs" frameborder="0" allowfullscreen></iframe>            
+                         
             <p>Please note that these stories are public and some of them will be transcribed and become a part of the initiative
                on our website. (If you prefer not to have your story published online, please put a star next to your last sentence).
                </p>
-            
-			<h2>Header</h2>
             <p>You may view public stories from the diaries at Hi F.I.V.E.'s <a href="http://hi-fivemovement.tumblr.com/">SFU Opens Up Tumblr</a>.</p>
-	</div>
+			
+            <h2>The Logo</h2>
+            <div class="aboutLogoContest">   
+                <img class="logo-contest" alt="Logo Contest Winner" src="images/logoContest.png" width="300" height="225"/>
+                <p>In March 2013, SFU Health and Counselling Services and Healthy Minds/Healthy Campuses partnered to hold a logo design contest inviting post-secondary students to submit their designs in a bid to win $500 and have their logo be the face of a mental health revolution in BC. After a preliminary selection process by SFU staff, the top entries were brought before student panels, mental health groups, and social media in which based on all feedback, David Yan was determined the winner of our search.</p>    
+            </div>
+        
+    </div>
 	
 	<!--forth box-->
 		<div id="footer">
@@ -104,10 +94,11 @@ $(function(){    // this is the shorthand for document.ready
         <div class="contact">
             <ul>
                 <li><h4>CONTACT US</h4></li>
-                <li class="sitemap">Email:hcs_feedback@sfu.ca</li>
-                <li class="sitemap">Phone:778-782-4615</li>
+                <li class="sitemap"><a class="sitemap" href="mailto:hcs_feedback@sfu.ca">Email:hcs_feedback@sfu.ca</a></li>
+                <li class="sitemap"><a class="sitemap" href="tel:778-829-8206">Phone:778-782-4615</a></li>
                 <li><a class="sitemap" href="http://www.sfu.ca/">SFU</a></li>
                 <li><a class="sitemap" href="http://www.bcit.ca/">BCIT</a></li>
+                <li><a class="sitemap" href="http://hi-fivemovement.tumblr.com/">Tumblr</a></li>
             </ul>
         </div>
         <div class="terms">

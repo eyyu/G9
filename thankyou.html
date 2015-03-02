@@ -4,27 +4,11 @@
 <head>
 		<title>Hi Five Thank You</title>
 		<meta charset="utf-8">
-        <link rel="stylesheet" href="styles.css">
-        <script type="text/javascript" language="Javascript" 
+        <link rel="stylesheet" href="base.css">
+        <script type="text/javascript" 
         src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js">
         </script>
-<script>
-$(function(){    // this is the shorthand for document.ready
-  $(document).scroll(function(){    // this is the scroll event for the document
-
-    scrolltop = $(document).scrollTop(); // by this we get the value of the scrolltop ie how much scroll has been don by user
-    if(parseInt(scrolltop) >= 350)    // check if the scroll value is equal to the top of navigation
-      { 
-        $("#navbar").css({"position":"fixed","top":"0"});   // is yes then make the position fixed to top 0
-      }
-    else
-    {
-      $("#navbar").css({"position":"absolute","top":"350px"}); // if no then make the position to absolute and set it to 80
-    }
-  })
-
-});
-</script>
+        <script type="text/javascript" src="externalScript.js"></script>
 </head>
 <!--divide this page into 4 boxes-->
 <body>
@@ -32,7 +16,7 @@ $(function(){    // this is the shorthand for document.ready
 	<!--first box-->
 	<div id="header">
 		<div id="header-interior">
-            <img src="images/hi5header.jpg" width="702" height=350" alt="HeaderPhoto" usemap="#signin">
+            <img src="images/hi5header.jpg" width="702" height="350" alt="HeaderPhoto" usemap="#signin">
                <map name="signin">
                    <area shape="rect" coords="550,8,689,40" href="login.html" alt="login">
                </map>
@@ -56,13 +40,14 @@ $(function(){    // this is the shorthand for document.ready
 	<!--third box-->
 	<div id="content">
 		<h1>Pledge</h1>
+		<img src="images/hifivecrew.jpg" width="683" height="350" alt="HiFiveCrew" >
         <p>Thank You for taking the Pledge!</p>
-        <a target="_blank" href="http://www.freecounterstat.com/geozoom.php?c=279dd751d5a2caf80af2297026de520d&base=counter6&type_clic=1">
-<img border="0" alt="Click to see detail of visits and stats for this site" src="http://counter6.freecounterstat.com/private/counter.php?c=27…nterstat=1&library=library_counters&coef=1&type=184&lenght=5"></img>
-         <p>pledges taken: 	<script type="text/javascript" src="http://counter6.statcounterfree.com/private/counter.js?c=279dd751d5a2caf80af2297026de520d"></script></p>
-		<img src=" ">
-		<h2>Thank You</h2>
-		<p>Thank You for joining us!</p>
+         <p>Pledges taken: <script type="text/javascript" src="http://counter7.allfreecounter.com/private/counter.js?c=0b6ac8ff13040be5d2b9a87a2cea5675"></script></p>
+		 
+		<!--<a href="http://www.freecounterstat.com" target="_Blank" title="website counter">website counter</a><br/>-->
+		<!-- counter account ID: 0b6ac8ff13040be5d2b9a87a2cea5675->
+		<!-- domain account :counter7-->
+		 
 	</div>
 	
 	<!--forth box-->
@@ -86,13 +71,14 @@ $(function(){    // this is the shorthand for document.ready
                 <li><a class="sitemap" href="https://www.pinterest.com/SimonFraserHCS/the-dish/">Pinterest</a></li>
                 <li><a class="sitemap" href="https://www.facebook.com/SFUHealthandCounselling">Facebook</a></li>
                 <li><a class="sitemap" href="https://www.youtube.com/user/SFUhcs">YouTube</a></li>
+                <li><a class="sitemap" href="http://hi-fivemovement.tumblr.com/">Tumblr</a></li>
             </ul>
         </div>
         <div class="contact">
             <ul>
                 <li><h4>CONTACT US</h4></li>
-                <li class="sitemap">Email:hcs_feedback@sfu.ca</li>
-                <li class="sitemap">Phone:778-782-4615</li>
+                <li class="sitemap"><a class="sitemap" href="mailto:hcs_feedback@sfu.ca">Email:hcs_feedback@sfu.ca</a></li>
+                <li class="sitemap"><a class="sitemap" href="tel:778-829-8206">Phone:778-782-4615</a></li>
                 <li><a class="sitemap" href="http://www.sfu.ca/">SFU</a></li>
                 <li><a class="sitemap" href="http://www.bcit.ca/">BCIT</a></li>
             </ul>
@@ -105,4 +91,4 @@ $(function(){    // this is the shorthand for document.ready
 </html>
 
 
-</a>
+

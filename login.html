@@ -4,27 +4,13 @@
 <head>
 		<title>Hi F.I.V.E Login</title>
 		<meta charset="utf-8">
-        <link rel="stylesheet" href="styles.css">
-        <script type="text/javascript" language="Javascript" 
+        <link rel="stylesheet" href="base.css">
+        <script type="text/javascript" 
         src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js">
         </script>
-<script>
-$(function(){    // this is the shorthand for document.ready
-  $(document).scroll(function(){    // this is the scroll event for the document
+        <script type="text/javascript" src="externalScript.js"></script>
+        <script src="validator.js" type="text/javascript"></script>
 
-    scrolltop = $(document).scrollTop(); // by this we get the value of the scrolltop ie how much scroll has been don by user
-    if(parseInt(scrolltop) >= 350)    // check if the scroll value is equal to the top of navigation
-      { 
-        $("#navbar").css({"position":"fixed","top":"0"});   // is yes then make the position fixed to top 0
-      }
-    else
-    {
-      $("#navbar").css({"position":"absolute","top":"350px"}); // if no then make the position to absolute and set it to 80
-    }
-  })
-
-});
-</script>
 </head>
 <!--divide the page into 4 boxes-->
 <body>
@@ -32,7 +18,7 @@ $(function(){    // this is the shorthand for document.ready
 	<!--first box-->
 	<div id="header">
 		<div id="header-interior">
-            <img src="images/hi5header.jpg" width="702" height=350" alt="HeaderPhoto" usemap="#signin">
+            <img src="images/hi5header.jpg" width="702" height="350" alt="HeaderPhoto" usemap="#signin">
                <map name="signin">
                    <area shape="rect" coords="550,8,689,40" href="login.html" alt="login">
                </map>		
@@ -55,23 +41,48 @@ $(function(){    // this is the shorthand for document.ready
 	<!--third box-->
 	<div id="content">
 			<div id="sign-in">
-				<form action=" " method="post" class="form-format">
-						<h2>Sign In</h2>
-						Username/Email:<br><input type="email"><br>
-						Password:<br><input type="password"><br>
+				<form name="signinform" action="http://webdevfoundations.net/scripts/formdemo.asp" method="post" class="form-format">
+						<h2 class="login">Sign In</h2>
+						<label for="email">Email:</label><br><div id='signinform_email_errorloc'></div><input type="email" name="email" id="email" /><br>
+						<label for="password">Password:</label><br><div id='signinform_password_errorloc'></div><input type="password" name="password" id="password" /><br>
 						<input type="submit" class="button" value="Submit">
 				</form>
+
+                <script type="text/javascript">
+                    var frmvalidator = new Validator("signinform");
+                    frmvalidator.EnableOnPageErrorDisplay();
+                    frmvalidator.EnableMsgsTogether();
+                    frmvalidator.addValidation("email","req","Please enter your email");   
+                    frmvalidator.addValidation("password","req","Please enter your password"); 
+                    
+                </script>
+                
 			</div>
 			<div id="sign-up">
-				<form action="" method="post" class="form-format">
-						<h2>Sign Up</h2>
-						First Name:<br><input type="text"><br>
-						Last Name:<br><input type="text"><br>
-						Email:<br><input type="email"><br>
-						Password:<br><input type="text"><br>
-						Confirm Password:<br><input type="text"><br>
+				
+                <form name="signupform" action="http://webdevfoundations.net/scripts/formdemo.asp" method="post" class="form-format">
+						<h2 class="login">Sign Up</h2>
+						<label for="firstname">First Name:</label><br><div id='signupform_firstname_errorloc'></div><input type="text" name="firstname" id="firstname"><br>
+						<label for="lastname">Last Name:</label><br><div id='signupform_lastname_errorloc'></div><input type="text" name="lastname" id="lastname"><br>
+						<label for="cemail">Email:</label><br><div id='signupform_email_errorloc'></div><input type="email" name="email" id="cemail"><br>
+						<label for="cpass">Password:</label><br><div id='signupform_pass_errorloc'></div><input type="password" name="pass" id="cpass"><br>
+						<label for="confirmpass">Confirm Password:</label><br><div id='signupform_confirmpass_errorloc'></div><input type="password" name="confirmpass" id="confirmpass"><br>
 						<input type="submit" class="button" value="Submit">
 				</form>
+                <script type="text/javascript">
+                    var signupformValidator  = new Validator("signupform");
+                    signupformValidator.EnableOnPageErrorDisplay();
+                    signupformValidator.EnableMsgsTogether();
+                    signupformValidator.addValidation("firstname","req","Please enter your first name");
+                    signupformValidator.addValidation("lastname","req","Please enter your last name");        
+                    signupformValidator.addValidation("email","req","Please enter an email");
+                    signupformValidator.addValidation("pass","req","Please enter a password");
+                    signupformValidator.addValidation("pass","neelmnt=email","The password should not be the email");
+                    signupformValidator.addValidation("confirmpass","req","Please confirm password");
+                    signupformValidator.addValidation("confirmpass","eqelmnt=pass","The confirmed password is not same as password");           
+                </script>                
+                
+
 			</div>
 	</div>
 	
@@ -99,13 +110,14 @@ $(function(){    // this is the shorthand for document.ready
                 <li><a class="sitemap" href="https://www.pinterest.com/SimonFraserHCS/the-dish/">Pinterest</a></li>
                 <li><a class="sitemap" href="https://www.facebook.com/SFUHealthandCounselling">Facebook</a></li>
                 <li><a class="sitemap" href="https://www.youtube.com/user/SFUhcs">YouTube</a></li>
+                <li><a class="sitemap" href="http://hi-fivemovement.tumblr.com/">Tumblr</a></li>
             </ul>
         </div>
         <div class="contact">
             <ul>
                 <li><h4>CONTACT US</h4></li>
-                <li class="sitemap">Email:hcs_feedback@sfu.ca</li>
-                <li class="sitemap">Phone:778-782-4615</li>
+                <li class="sitemap"><a class="sitemap" href="mailto:hcs_feedback@sfu.ca">Email:hcs_feedback@sfu.ca</a></li>
+                <li class="sitemap"><a class="sitemap" href="tel:778-829-8206">Phone:778-782-4615</a></li>
                 <li><a class="sitemap" href="http://www.sfu.ca/">SFU</a></li>
                 <li><a class="sitemap" href="http://www.bcit.ca/">BCIT</a></li>
             </ul>

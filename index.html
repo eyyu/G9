@@ -4,27 +4,11 @@
 <head>
 		<title>Hi F.I.V.E Home</title>
 		<meta charset="utf-8">
-        <link rel="stylesheet" href="styles.css">
-        <script type="text/javascript" language="Javascript" 
+        <link rel="stylesheet" href="base.css">
+        <script type="text/javascript"  
         src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js">
         </script>
-<script>
-$(function(){    // this is the shorthand for document.ready
-  $(document).scroll(function(){    // this is the scroll event for the document
-
-    scrolltop = $(document).scrollTop(); // by this we get the value of the scrolltop ie how much scroll has been don by user
-    if(parseInt(scrolltop) >= 350)    // check if the scroll value is equal to the top of navigation
-      { 
-        $("#navbar").css({"position":"fixed","top":"0"});   // is yes then make the position fixed to top 0
-      }
-    else
-    {
-      $("#navbar").css({"position":"absolute","top":"350px"}); // if no then make the position to absolute and set it to 80
-    }
-  })
-
-});
-</script>
+        <script type="text/javascript" src="externalScript.js"></script>
 </head>
 <!--divide this page into 5 boxes-->
 <body>
@@ -33,7 +17,7 @@ $(function(){    // this is the shorthand for document.ready
 	<div id="header">
 		<div id="header-interior">
 
-            <img src="images/hi5header.jpg" width="702" height=350" alt="HeaderPhoto" usemap="#signin">
+            <img src="images/hi5header.jpg" width="702" height="350" alt="HeaderPhoto" usemap="#signin">
 
                <map name="signin">
                    <area shape="rect" coords="550,8,689,40" href="login.html" alt="login">
@@ -72,7 +56,7 @@ $(function(){    // this is the shorthand for document.ready
 				<img src="images/toolsphoto.jpg" width="200" height="200" alt="ToolsPhoto" usemap ="#tools">
 
                <map name="tools">
-                   <area shape="circle" coords="101,103,93" href="toolkit.html" alt="toolsmap">
+                   <area shape="circle" coords="101,103,93" href="toolkit.html" alt="toolsmap"></map>
 
                 <h3>Take Action</h3>
 				<p>Make a difference in your community. Here are some <a href="toolkit.html">tools</a> to get you started. </p>
@@ -80,7 +64,7 @@ $(function(){    // this is the shorthand for document.ready
 			<div id="middle">
 				<img src="images/stigma1photo.jpg" width="200" height="200" alt="StigmaPhoto" usemap ="#stigma">
                 <map name="stigma">
-                   <area shape="circle" coords="101,103,93" href="stigma.html" alt="stigmamap">
+                   <area shape="circle" coords="101,103,93" href="stigma.html" alt="stigmamap"></map>
 
 
 				<h3>About Stigma</h3>
@@ -89,7 +73,7 @@ $(function(){    // this is the shorthand for document.ready
 			<div id="right">
 				<img src="images/pledgephoto.jpg" width="200" height="200" alt="PledgePhoto" usemap ="#pledge">
                 <map name="pledge">
-                   <area shape="circle" coords="101,103,93" href="pledge.html" alt="pledgemap">
+                   <area shape="circle" coords="101,103,93" href="pledge.html" alt="pledgemap"></map>
 
                 <h3>Join Us</h3>
 				<p>Join the Movement! <a href="login.html"> Get Involved!</a> OR <a href="pledge.html">Take the pledge!</a></p>
@@ -98,10 +82,6 @@ $(function(){    // this is the shorthand for document.ready
 	</div>
 	
 	<!--forth box-->
-	<div id="photo-gallery">
-	</div>
-	
-	<!--fifth box-->
 	<div id="photo-gallery">
 	</div>
 	
@@ -126,13 +106,15 @@ $(function(){    // this is the shorthand for document.ready
                 <li><a class="sitemap" href="https://www.pinterest.com/SimonFraserHCS/the-dish/">Pinterest</a></li>
                 <li><a class="sitemap" href="https://www.facebook.com/SFUHealthandCounselling">Facebook</a></li>
                 <li><a class="sitemap" href="https://www.youtube.com/user/SFUhcs">YouTube</a></li>
+                <li><a class="sitemap" href="http://hi-fivemovement.tumblr.com/">Tumblr</a></li>
+                
             </ul>
         </div>
         <div class="contact">
             <ul>
                 <li><h4>CONTACT US</h4></li>
-                <li class="sitemap">Email:hcs_feedback@sfu.ca</li>
-                <li class="sitemap">Phone:778-782-4615</li>
+                <li class="sitemap"><a class="sitemap" href="mailto:hcs_feedback@sfu.ca">Email:hcs_feedback@sfu.ca</a></li>
+                <li class="sitemap"><a class="sitemap" href="tel:778-829-8206">Phone:778-782-4615</a></li>
                 <li><a class="sitemap" href="http://www.sfu.ca/">SFU</a></li>
                 <li><a class="sitemap" href="http://www.bcit.ca/">BCIT</a></li>
             </ul>
