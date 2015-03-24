@@ -81,6 +81,7 @@ html, body
     background-color: #C64804;
     height: 25px;
     padding-top: 15px;
+    font-weight: bold;
 }
 
 #content /*overall body, contains upper-content and lower-content in index*/
@@ -462,6 +463,7 @@ ul.tool-kit-list{
     margin-top: 0;
 
 }
+
 img.tool-kit-pdf{
 float:right;
 padding-right: 100px;
@@ -473,6 +475,12 @@ padding-right: 100px;
     width:702px;
     height:350px;
 
+}
+.pdf-content h2{
+    color: #C64804;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: Century Gothic, sans-serif;
 }
 .pdf-content-inner1{
     position: absolute;
