@@ -14,7 +14,7 @@
 </head>
 <!--divide the page into 4 boxes-->
 <body>
-	
+
 	<!--first box-->
 	<div id="header">
 		<div id="header-interior">
@@ -58,9 +58,47 @@
                 </script>
                 
 			</div>
+        <?php
+if(isset($_POST['add']))
+{
+$dbhost = 'leiafang.webege.com';
+$dbuser = 'a3722077_leia';
+$dbpass = '7865380fh';
+$conn = mysql_connect($dbhost, $dbuser, $dbpass);
+if(! $conn )
+{
+  die('Could not connect: ' . mysql_error());
+}
+
+if(! get_magic_quotes_gpc() )
+{
+   $email = addslashes ($_POST['email']);
+   $pwd = addslashes ($_POST['pass']);
+}
+else
+{
+   $email = addslashes ($_POST['email']);
+   $pwd = addslashes ($_POST['pass']);
+}
+
+$sql = "INSERT INTO a3722077_form ".
+       "(email, password) ".
+       "VALUES('$email','$password', NOW())";
+mysql_select_db('a3722077_form');
+$retval = mysql_query( $sql, $conn );
+if(! $retval )
+{
+  die('Could not enter data: ' . mysql_error());
+}
+echo "Entered data successfully\n";
+mysql_close($conn);
+}
+else
+{
+?>
 			<div id="sign-up">
 				
-                <form name="signupform" action="http://webdevfoundations.net/scripts/formdemo.asp" method="post" class="form-format">
+                <form name="signupform" action="signup.php" method="post" class="form-format">
 						<h2 class="login">Sign Up</h2>
 						<label for="firstname">First Name:</label><br><div id='signupform_firstname_errorloc'></div><input type="text" name="firstname" id="firstname"><br>
 						<label for="lastname">Last Name:</label><br><div id='signupform_lastname_errorloc'></div><input type="text" name="lastname" id="lastname"><br>
@@ -84,6 +122,9 @@
                 
 
 			</div>
+        <?php
+}
+?>
 	</div>
 	
 	<!--forth box-->
