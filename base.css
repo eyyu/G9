@@ -81,6 +81,7 @@ html, body
     background-color: #C64804;
     height: 25px;
     padding-top: 15px;
+    font-weight:  bold;
 }
 
 #content /*overall body, contains upper-content and lower-content in index*/
