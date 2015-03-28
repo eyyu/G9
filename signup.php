@@ -1,8 +1,7 @@
 <?php
-    $fn = strtolower($_POST["firstname"]);
-    $ln = strtolower($_POST["lastname"]);
+    $pass = strtolower($_POST["password"]);
     $email = strtolower($_POST["email"]);
  
-    $format = $fn." ".$ln." ".$email;
+    $format = $pass." ".$ln." ".$email;
 ?>
 
