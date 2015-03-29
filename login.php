@@ -1,38 +1,41 @@
 <?php
-define('DB_HOST', 'localhost');
-define('DB_NAME', 'practice');
-define('DB_USER','root');
-define('DB_PASSWORD','');
 
-$con=mysql_connect(DB_HOST,DB_USER,DB_PASSWORD) or die("Failed to connect to MySQL: " . mysql_error());
-$db=mysql_select_db(DB_NAME,$con) or die("Failed to connect to MySQL: " . mysql_error());
-/*
-$ID = $_POST['user'];
-$Password = $_POST['pass'];
-*/
-function SignIn()
-{
-session_start();   //starting the session for user profile page
-if(!empty($_POST['user']))   //checking the 'user' name which is from Sign-In.html, is it empty or have some text
-{
-	$query = mysql_query("SELECT *  FROM UserName where userName = '$_POST[user]' AND pass = '$_POST[pass]'") or die(mysql_error());
-	$row = mysql_fetch_array($query) or die(mysql_error());
-	if(!empty($row['userName']) AND !empty($row['pass']))
-	{
-		$_SESSION['userName'] = $row['pass'];
-		echo "SUCCESSFULLY LOGIN TO USER PROFILE PAGE...";
+$host="mysql14.000webhost.com"; // Host name
+$username="a3722077_leia"; // Mysql username
+$password="7865380fh"; // Mysql password
+$db_name="a3722077_lr"; // Database name
+$tbl_name="users"; // Table name
 
-	}
-	else
-	{
-		echo "SORRY... YOU ENTERD WRONG ID AND PASSWORD... PLEASE RETRY...";
-	}
-}
-}
-if(isset($_POST['submit']))
-{
-	SignIn();
-}
+// Connect to server and select databse.
+mysql_connect("$host", "$username", "$password")or die("cannot connect");
+mysql_select_db("$db_name")or die("cannot select DB");
 
+// username and password sent from form
+$email=$_POST['email'];
+$password=$_POST['pass'];
+
+// To protect MySQL injection (more detail about MySQL injection)
+// $email = stripslashes($email);
+// $password = stripslashes($password);
+// $email = mysql_real_escape_string($email);
+// $password = mysql_real_escape_string($password);
+
+$sql="SELECT * FROM $tbl_name WHERE email='$email' and password='$password'";
+$result=mysql_query($sql);
+
+// Mysql_num_row is counting table row
+$count=mysql_num_rows($result);
+
+// If result matched $myusername and $mypassword, table row must be 1 row
+
+if($count != 1){
+
+// Register $myusername, $mypassword and redirect to file "login_success.php"
+session_register("email");
+session_register("password");
+header("location: index.php");
+}
+else {
+header("location: loginRegister.php");
+}
 ?>
-

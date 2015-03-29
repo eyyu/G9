@@ -22,7 +22,7 @@
 				$email = clean($_POST['email']);
 				$password = clean($_POST['pass']);
 				$cpassword = clean($_POST['confirmpass']);
-				$sql = "INSERT INTO users(first_name,last_name, email, password) VALUES('$fname','$lname','$email','".md5($_POST['pass'])."')";
+				$sql = "INSERT INTO users(first_name,last_name, email, password) VALUES('$fname','$lname','$email','$password')";
 
 				mysql_select_db('a3722077_lr');
 				$retval = mysql_query( $sql, $conn );
