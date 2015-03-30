@@ -1,104 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-		<title>Hi F.I.V.E Login</title>
+		<title>Hi F.I.V.E About</title>
 		<meta charset="utf-8">
-        <link rel="stylesheet" href="base.css">
-        <script type="text/javascript" 
+        <link rel="stylesheet" href="css/base.css">
+        <script type="text/javascript"  
         src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js">
         </script>
         <script type="text/javascript" src="externalScript.js"></script>
-        <script src="validator.js" type="text/javascript"></script>
-
+            <script src="validator.js" type="text/javascript"></script>
 </head>
-<!--divide the page into 4 boxes-->
-<body>  
-
-	<!--first box-->
+<body>
 	<div id="header">
 		<div id="header-interior">
-            <img src="images/hi5header.jpg" width="702" height="350" alt="HeaderPhoto" usemap="#signin">
+            <img src="images/hi5cover.jpg" width="1000" height="402" alt="HeaderPhoto" usemap="#signin">
                <map name="signin">
-                   <area shape="rect" coords="550,8,689,40" href="login.html" alt="login">
-               </map>		
-        </div>
+                   <area shape="rect" coords="805,15,975,73" href="loginRegister.php" alt="login">
+               </map>
+		</div>
 		<div id="social-link">
 		</div>
-	</div>
-	
-	<!--second box-->
-	<div id="nav">
+</div>	<div id="nav">
             <ul id="navbar">    <!--changed to list form-->
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.php">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="stigma.html">Stigma</a></li>
                 <li><a href="toolkit.html">Tool Kit</a></li>
                 <li><a href="pledge.html">Pledge</a></li>
                 <li><a class="resources" href="resources.html">Resources</a></li>
-            </ul>
-	</div>
-	<!--third box-->
-	<div id="content">
-			<div id="sign-in">
-				<form name="signinform" action="http://webdevfoundations.net/scripts/formdemo.asp" method="post" class="form-format">
-						<h2 class="login">Sign In</h2>
-						<label for="email">Email:</label><br><div id='signinform_email_errorloc'></div><input type="email" name="email" id="email" /><br>
-						<label for="password">Password:</label><br><div id='signinform_password_errorloc'></div><input type="password" name="password" id="password" /><br>
-						<input type="submit" class="button" value="Submit">
-				</form>
-
-                <script type="text/javascript">
-                    var frmvalidator = new Validator("signinform");
-                    frmvalidator.EnableOnPageErrorDisplay();
-                    frmvalidator.EnableMsgsTogether();
-                    frmvalidator.addValidation("email","req","Please enter your email");   
-                    frmvalidator.addValidation("password","req","Please enter your password"); 
-                    
-                </script>
                 
-			</div>
-        <?php
-if(isset($_POST['add']))
-{
-$dbhost = 'leiafang.webege.com';
-$dbuser = 'a3722077_leia';
-$dbpass = '7865380fh';
-$conn = mysql_connect($dbhost, $dbuser, $dbpass);
-if(! $conn )
-{
-  die('Could not connect: ' . mysql_error());
-}
+            </ul>
+</div>
+	<!--third box-->
+	
+	
+	<div id="content">
+		
+       
+	<div id="sign-in">
+		<form name="signinform" action="login.php" method="post" class="form-format">
+			<h2 class="login">Log In</h2>
+			<label for="email">Email:</label><br><div id='signinform_email_errorloc'></div>
+			<input type="email" name="email" id="email" /><br>
+			
+			<label for="password">Password:</label><br><div id='signinform_password_errorloc'></div>
+			<input type="password" name="password" id="password" /><br>
+			
+			<input type="submit" class="button" value="Login ">
+		</form>
 
-if(! get_magic_quotes_gpc() )
-{
-   $email = addslashes ($_POST['email']);
-   $pwd = addslashes ($_POST['pass']);
-}
-else
-{
-   $email = addslashes ($_POST['email']);
-   $pwd = addslashes ($_POST['pass']);
-}
+    	<script type="text/javascript">
+        	var frmvalidator = new Validator("signinform");
+        	frmvalidator.EnableOnPageErrorDisplay();
+        	frmvalidator.EnableMsgsTogether();
+        	frmvalidator.addValidation("email","req","Please enter your email");   
+        	frmvalidator.addValidation("password","req","Please enter your password"); 
+                    
+    	</script>
+                
+	</div>
+			
 
-$sql = "INSERT INTO a3722077_form ".
-       "(email, password) ".
-       "VALUES('$email','$password', NOW())";
-mysql_select_db('a3722077_form');
-$retval = mysql_query( $sql, $conn );
-if(! $retval )
-{
-  die('Could not enter data: ' . mysql_error());
-}
-echo "Entered data successfully\n";
-mysql_close($conn);
-}
-else
-{
-?>
+
 			<div id="sign-up">
 				
-                <form name="signupform" action="signup.php" method="post" class="form-format">
+            
+                <form name="signupform" action="register.php" method="post" class="form-format">
 						<h2 class="login">Sign Up</h2>
 						<label for="firstname">First Name:</label><br><div id='signupform_firstname_errorloc'></div><input type="text" name="firstname" id="firstname"><br>
 						<label for="lastname">Last Name:</label><br><div id='signupform_lastname_errorloc'></div><input type="text" name="lastname" id="lastname"><br>
@@ -113,30 +80,22 @@ else
                     signupformValidator.EnableMsgsTogether();
                     signupformValidator.addValidation("firstname","req","Please enter your first name");
                     signupformValidator.addValidation("lastname","req","Please enter your last name");        
-                    signupformValidator.addValidation("email","req","Please enter an email");
-                    signupformValidator.addValidation("pass","req","Please enter a password");
-                    signupformValidator.addValidation("pass","neelmnt=email","The password should not be the email");
+                    signupformValidator.addValidation("cemail","req","Please enter an email");
+                    signupformValidator.addValidation("cpass","req","Please enter a password");
+                    signupformValidator.addValidation("cpass","neelmnt=email","The password should not be the email");
                     signupformValidator.addValidation("confirmpass","req","Please confirm password");
                     signupformValidator.addValidation("confirmpass","eqelmnt=pass","The confirmed password is not same as password");           
                 </script>                
-                
-
 			</div>
-        <?php
-}
-?>
+			
 	</div>
 	
-	<!--forth box-->
-<<<<<<< HEAD
-    <div id="footer">
-=======
-    	<div id="footer">
+<div id="footer">
         <div class="site-map">
             <ul>
                 <li><h4>SITE MAP</h4></li>
-                <li><a class="sitemap" href="index.html">Home</a></li>
-                <li><a class="sitemap" href="login.html">Log in/Sign up</a></li>
+                <li><a class="sitemap" href="index.php">Home</a></li>
+                <li><a class="sitemap" href="loginRegister.php">Log in/Sign up</a></li>
                 <li><a class="sitemap" href="about.html">About</a></li>
                 <li><a class="sitemap" href="toolkit.html">Tool kit</a></li>
                 <li><a class="sitemap" href="pledge.html">Pledge</a></li>
@@ -151,7 +110,6 @@ else
                 <li><a class="sitemap" href="https://www.pinterest.com/SimonFraserHCS/the-dish/">Pinterest</a></li>
                 <li><a class="sitemap" href="https://www.facebook.com/SFUHealthandCounselling">Facebook</a></li>
                 <li><a class="sitemap" href="https://www.youtube.com/user/SFUhcs">YouTube</a></li>
-                <li><a class="sitemap" href="http://hi-fivemovement.tumblr.com/">Tumblr</a></li>
             </ul>
         </div>
         <div class="contact">
@@ -161,12 +119,11 @@ else
                 <li class="sitemap"><a class="sitemap" href="tel:778-829-8206">Phone:778-782-4615</a></li>
                 <li><a class="sitemap" href="http://www.sfu.ca/">SFU</a></li>
                 <li><a class="sitemap" href="http://www.bcit.ca/">BCIT</a></li>
+                <li><a class="sitemap" href="http://hi-fivemovement.tumblr.com/">Tumblr</a></li>
             </ul>
         </div>
         <div class="terms">
             <p>Terms and Conditions &copy; Simon Fraser University</p>
         </div>
->>>>>>> 8e602e4599d3fd9c631735bcf811cc2968199dcf
-	</div>
-</body>
+</div></body>
 </html>

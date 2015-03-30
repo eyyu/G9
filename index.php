@@ -14,7 +14,7 @@
 		<div id="header-interior">
             <img src="images/hi5cover.jpg" width="1000" height="402" alt="HeaderPhoto" usemap="#signin">
                <map name="signin">
-                   <area shape="rect" coords="800,8,970,73" href="loginRegister.php" alt="login">
+                   <area shape="rect" coords="805,15,975,73" href="loginRegister.php" alt="login">
                </map>
 		</div>
 		<div id="social-link">
@@ -60,7 +60,8 @@
 
 
 				<h3>About Stigma</h3>
-				<p>Lets Beat the Stigma! Learn more<a href="stigma.html"> about Stigma</a>. </p>
+				<p>Lets Beat the Stigma! Learn more<a href="stigma.html"> about Stigma</a>.
+                    </br></br></br> <a href="loginRegister.php">Sign In / Sign Up?</a> </p>
 			</div>
 			<div id="right">
 				<img src="images/pledgephoto.jpg" width="200" height="200" alt="PledgePhoto" usemap ="#pledge">
@@ -71,6 +72,7 @@
 				<p>Join the Movement! <a href="login.html"> Get Involved!</a> OR <a href="pledge.html">Take the pledge!</a></p>
 			</div>
 		</div>
+ 
 	</div>
 	
 	<!--forth box-->
@@ -80,8 +82,8 @@
         <div class="site-map">
             <ul>
                 <li><h4>SITE MAP</h4></li>
-                <li><a class="sitemap" href="index.html">Home</a></li>
-                <li><a class="sitemap" href="login.html">Log in/Sign up</a></li>
+                <li><a class="sitemap" href="index.php">Home</a></li>
+                <li><a class="sitemap" href="loginRegister.php">Log in/Sign up</a></li>
                 <li><a class="sitemap" href="about.html">About</a></li>
                 <li><a class="sitemap" href="toolkit.html">Tool kit</a></li>
                 <li><a class="sitemap" href="pledge.html">Pledge</a></li>

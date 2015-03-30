@@ -1,10 +1,9 @@
-	<!--forth box-->
-		<div id="footer">
+<div id="footer">
         <div class="site-map">
             <ul>
                 <li><h4>SITE MAP</h4></li>
-                <li><a class="sitemap" href="index.html">Home</a></li>
-                <li><a class="sitemap" href="login.html">Log in/Sign up</a></li>
+                <li><a class="sitemap" href="index.php">Home</a></li>
+                <li><a class="sitemap" href="loginRegister.php">Log in/Sign up</a></li>
                 <li><a class="sitemap" href="about.html">About</a></li>
                 <li><a class="sitemap" href="toolkit.html">Tool kit</a></li>
                 <li><a class="sitemap" href="pledge.html">Pledge</a></li>
@@ -34,7 +33,4 @@
         <div class="terms">
             <p>Terms and Conditions &copy; Simon Fraser University</p>
         </div>
-	</div>
-
-</body>
-</html>
+</div>
